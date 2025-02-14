@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz San Valentín, Jamilet</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        
+        body {
+            background-color: #000;
+            color: white;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        #particles-js {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        .message {
+            position: absolute;
+            top: 40%;
+            width: 100%;
+            font-size: 3rem;
+            font-weight: bold;
+            text-shadow: 3px 3px 5px red;
+        }
+
+        /* Estilo para la imagen personalizada */
+        .custom-image {
+            position: absolute;
+            top: 57%;  /* Ajusta la posición vertical */
+            left: 50%;
+            transform: translateX(-50%);
+            width: 200px; /* Ajusta el tamaño de la imagen */
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="particles-js"></div>
+    <div class="message">Feliz San Valentín, Jamilet</div>
+    
+    <!-- Aquí coloca la imagen que desees -->
+    <img src="C:\Users\morejon\Desktop\Imagen de WhatsApp 2025-02-13 a las 20.51.49_c99f82d5.jpg" class="custom-image" alt="Imagen personalizada">
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS("particles-js", {
+            "particles": {
+                "number": {
+                    "value": 100,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#ff0000"
+                },
+                "shape": {
+                    "type": "circle"
+                },
+                "opacity": {
+                    "value": 0.7,
+                    "random": true
+                },
+                "size": {
+                    "value": 5,
+                    "random": true
+                },
+                "line_linked": {
+                    "enable": false
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 2,
+                    "direction": "none",
+                    "random": true,
+                    "straight": false,
+                    "out_mode": "out"
+                }
+            },
+            "interactivity": {
+                "events": {
+                    "onhover": {
+                        "enable": true,
+                        "mode": "repulse"
+                    }
+                }
+            }
+        });
+    </script>
+
+</body>
+</html>
